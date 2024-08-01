@@ -108,7 +108,7 @@ resource "aws_instance" "amazon_linux_2" {
   ami           = "ami-00db8dadb36c9815e"
   instance_type = "t2.micro"
   subnet_id = aws_subnet.qyt_outside_subnet.id
-  iam_instance_profile = "WebService"
+#   iam_instance_profile = "WebService"
   security_groups = [aws_security_group.qyt_aws_allow_ssh_web.id]
   tags = {
     Name = "qytang ec2"
